@@ -9,6 +9,7 @@
     "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist",
+    "rootDir": "./lib",
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
@@ -19,10 +20,10 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@app/azure-service-bus-adapter": [
-        "libs/azure-service-bus-adapter/src"
+        "lib"
       ],
       "@app/azure-service-bus-adapter/*": [
-        "libs/azure-service-bus-adapter/src/*"
+        "lib/*"
       ]
     }
   }
