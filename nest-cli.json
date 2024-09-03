@@ -3,6 +3,18 @@
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
   "compilerOptions": {
-    "deleteOutDir": true
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "azure-service-bus-adapter": {
+      "type": "library",
+      "root": "libs/azure-service-bus-adapter",
+      "entryFile": "index",
+      "sourceRoot": "libs/azure-service-bus-adapter/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/azure-service-bus-adapter/tsconfig.lib.json"
+      }
+    }
   }
 }

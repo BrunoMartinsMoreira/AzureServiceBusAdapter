@@ -16,6 +16,14 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/azure-service-bus-adapter": [
+        "libs/azure-service-bus-adapter/src"
+      ],
+      "@app/azure-service-bus-adapter/*": [
+        "libs/azure-service-bus-adapter/src/*"
+      ]
+    }
   }
 }
